@@ -1,0 +1,121 @@
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  searchInput.addEventListener('keyup', filterMovies);
+
+  function filterMovies() {
+      const searchValue = searchInput.value.toLowerCase();
+      const sections = document.querySelectorAll('.swiper-wrapper');
+
+      sections.forEach(section => {
+          const movies = section.querySelectorAll('.swiper-slide');
+          movies.forEach(movie => {
+              const title = movie.querySelector('.content h3').innerText.toLowerCase();
+              if (title.includes(searchValue)) {
+                  movie.style.display = '';
+              } else {
+                  movie.style.display = 'none';
+              }
+          });
+      });
+  }
+});
+
+menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+}
+
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true,
+  });
+
+  var swiper = new Swiper(".anime-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true
+  });
+
+
+  var swiper = new Swiper(".action-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true
+  });
+
+
+  var swiper = new Swiper(".child-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true
+  });
+
+  var swiper = new Swiper(".family-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 30000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true
+  });
+
+  var swiper = new Swiper(".sport-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true
+  });
+  
