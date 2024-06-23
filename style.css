@@ -44,8 +44,9 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 10000;
+    position: fixed;
+    background-color: hwb(0 16% 83%);
 }
-
 .heading{
     text-align: center;
     color: var(--red);
