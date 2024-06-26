@@ -390,7 +390,7 @@ header .icons #menu-bars{
 
 
 .video-container video{
-    width: 100%;
+    width: 70%;
     aspect-ratio: 16/9;
 }
 
@@ -491,4 +491,64 @@ header .icons #menu-bars{
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+}
+.content h2{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 1500;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.banner .content h4{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.banner .content h4 span{
+    max-width: 1000px;
+    padding: 0 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.7rem;
+}
+
+.banner .content h4 span:first-child{
+    padding-left: 0;
+    font-size: 1.7rem;
+}
+
+.banner .content h4 span:last-child{
+    padding-right: none;
+    font-size: 1.7rem;
+}
+
+.banner .content h4 span i{
+    background: #de0611;
+    color: #fff;
+    padding: 0 8px;
+    display: inline-block;
+    font-size: 1.7rem;
+    border-radius: 2px;
+    font-size: 1.7rem;
+}
+
+.banner .content p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    margin: 5px 0 20px;
+    font-weight: bolder;
+}
+
+.banner .content h4 span .star-icon{
+    color: #ffa520;
+    background: none;
+    font-size: 1.7rem;
 }
