@@ -552,3 +552,8 @@ header .icons #menu-bars{
     background: none;
     font-size: 1.7rem;
 }
+
+.fa-instagram{
+    font-size: 35px;
+    color: var(--red);
+}
