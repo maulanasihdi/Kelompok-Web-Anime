@@ -9,7 +9,7 @@
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
-    <link rel="stylesheet" href="login register.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
@@ -49,14 +49,14 @@
                 </div>
                 <div class="register">
                     <span>Don't have an account?
-                        <a href="#">Register</a></span>
+                        <a href="register.php">Register</a></span>
                 </div>
             </form>
         </div>
 
     </div>
 
-    <script src="form.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

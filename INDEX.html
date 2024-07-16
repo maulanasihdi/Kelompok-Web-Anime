@@ -9,12 +9,27 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
 <body>
     <header>
+        <div class="menu-button">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                <h2>Hello <b>Wahyu html</b></h2>
+            </div>
+            <div class="sidebar-content">
+            </div>
+            <div class="sidebar-footer">
+                <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </div>
         <div class="first container">
              <a href="#" class="logo"></i>ANIMEFLIX</a>
         </div>
@@ -28,7 +43,7 @@
         </nav>
         <nav class="masuk">
             <h1></h1>
-            <a href="form.html">Masuk</a>
+            <a href="login.php">Masuk</a>
         </nav>
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
@@ -748,7 +763,15 @@
     <a href="https://www.instagram.com/animeflixx_website" target="_blank">
     <i class="fa-brands fa-instagram"></i></a>
 </div>
- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>  <script src="main.js" defer data-deferred="1">
- </script>
 </body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>  <script src="main.js" defer data-deferred="1">
+ </script>
+ <script src="main.js"></script>
+ <script>  document.querySelector('.menu-button').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+});
+document.querySelector('.back-btn').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+});
+</script>
 </html>
