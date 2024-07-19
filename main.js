@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navbar.classList.toggle('active');
   };
   new Swiper(".home-slider", {
-    spaceBetween: 30,
+    spaceBetween: 130,
     centeredSlides: true,
     autoplay: {
       delay: 2000,
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   new Swiper(".anime-slider", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 130,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   new Swiper(".action-slider", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 130,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   new Swiper(".child-slider", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 130,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   new Swiper(".family-slider", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 130,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   new Swiper(".sport-slider", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 130,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
