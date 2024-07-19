@@ -19,6 +19,7 @@
 }
 body{
     background-color:var(--light-color);
+    
 }
 
 html{
@@ -183,7 +184,8 @@ header .icons #menu-bars{
 }
 
 .anime{
-    padding:5rem;
+    padding: 7rem;
+    
 }
 
 .anime .box{
@@ -193,6 +195,8 @@ header .icons #menu-bars{
     background-position: center !important;
     justify-content:flex-end;
     padding:2rem 9%;
+    
+    
 }
 
 .anime .content h3{
@@ -214,7 +218,7 @@ header .icons #menu-bars{
     
 }
 .action{
-    padding:5rem;
+    padding: 5rem;
 }
 
 .action .box{
@@ -224,7 +228,7 @@ header .icons #menu-bars{
     align-items: center;
     background-size: cover !important;
     background-position: center !important;
-    justify-content:flex-end;
+    justify-content: flex-end;
     padding:2rem 9%;
 
 }
@@ -234,6 +238,7 @@ header .icons #menu-bars{
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
+   
 }
 
 .action .content P{
@@ -338,7 +343,7 @@ header .icons #menu-bars{
  }
 
  .sport .content P{
-     font-size: 1.2rem;
+     font-size: 12px;
      color:#fff;
      text-decoration: none;
 
@@ -385,9 +390,6 @@ header .icons #menu-bars{
     border-radius: .5rem;
     padding: .5rem 1.5rem;
 }
-
-
-
 
 .video-container video{
     width: 70%;
@@ -439,6 +441,7 @@ header .icons #menu-bars{
     height:219.94px;
     object-fit: cover;
     margin-top: 1.6rem;
+   
 }
 
 .download{
