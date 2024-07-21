@@ -7,10 +7,25 @@
     <title>Download Page</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">  
 </head>
 <body>
     <header>
+        <div class="menu-button">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                <h2>Hello <b>Wahyu html</b></h2>
+            </div>
+            <div class="sidebar-content">
+            </div>
+            <div class="sidebar-footer">
+                <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </div>
         <div class="first container">
              <a href="#" class="logo"></i>ANIMEFLIX</a>
         </div>
@@ -74,7 +89,12 @@
 
 
 </div>
-
-
+<script>  document.querySelector('.menu-button').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+});
+document.querySelector('.back-btn').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+});
+</script>
 </body>
 </html>

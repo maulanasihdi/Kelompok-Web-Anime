@@ -11,7 +11,7 @@
   }
 
   .menu-button:hover {
-    background-color: red;
+    background-color: #f44336;
   }
   
   .sidebar {
@@ -23,13 +23,27 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     transition: left 0.3s ease;
   }
 
   h2 {
-    position: relative;
-    right: 35px;
+    position : relative;
+    text-align: center;
+    font-weight: 2px;
+  }
+
+  .h2side {
+    position: absolute;
+    top : 20%;
+    left : 20%;
+    right: 20%;
+    font-size: 15px;
+  }
+
+  .nama-user {
+    font-weight: 25px;
+    color :#f44336;
   }
   
   .sidebar.active {
@@ -72,9 +86,35 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
-  }
-  
-  .logout-btn i {
     margin-right: 8px;
   }
+
+  .logout-btn:hover {
+    background-color: black;
+    color: #f44336;
+  }
+
+  .masuk {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+
+  .masuk:hover {
+    background-color: black;
+    color: #f44336;
+  }
+
+  .name-user {
+    font-size: 20px;
+  }
+  
+  
   

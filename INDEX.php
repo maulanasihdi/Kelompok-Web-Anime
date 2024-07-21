@@ -1,3 +1,11 @@
+<?php
+session_start();
+    if(isset($_SESSION['username'])) {
+        $username = $_SESSION['username'];
+    } else {
+        $username = "Guest";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +30,25 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
-                <h2>Hello <b>Wahyu html</b></h2>
+                <div class="h2side">
+                    <h2>Hello <b class="nama-user"><?php echo $username; ?></b></h2>
+                </div>
             </div>
             <div class="sidebar-content">
             </div>
+
             <div class="sidebar-footer">
-                <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <?php if($username == "Guest"): ?>
+            <div>
+            <a href="login.php" id="login-link" class="masuk">Sign in</a>
             </div>
+            <?php else: ?>
+                <a class="logout-btn" class="fas fa-sign-out-alt" href="logout.php"> Logout</a>
+                <?php endif; ?>
+            </div>
+            
         </div>
+        
         <div class="first container">
              <a href="#" class="logo"></i>ANIMEFLIX</a>
         </div>
@@ -41,9 +60,7 @@
              <a href="#family">Family</a>
              <a href="#sport">Sports</a>i
         </nav>
-        <nav class="masuk">
-            <h1></h1>
-            <a href="login.php">Masuk</a>
+
         </nav>
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
@@ -773,6 +790,7 @@ document.querySelector('.sidebar').classList.toggle('active');
 document.querySelector('.back-btn').addEventListener('click', function() {
   document.querySelector('.sidebar').classList.toggle('active');
 });
+    
 </script>
 </body>
 </html>
