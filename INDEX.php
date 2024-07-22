@@ -53,7 +53,7 @@ session_start();
              <a href="#" class="logo"></i>ANIMEFLIX</a>
         </div>
         <nav class="navbar">
-             <a href="index.html">Home</a>
+             <a href="INDEX.PHP">Home</a>
              <a href="#anime">Populer</a>
              <a href="#action">Action</a>
              <a href="#child">Comedy</a>
